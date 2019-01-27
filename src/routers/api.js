@@ -7,8 +7,8 @@ const companies = require('../controllers/companies/companies')
 app.get('/companies', companies.index);
 app.get('/companies/:id', companies.find);
 app.post('/companies', companies.create);
-// app.put('/companies/:id', companies.update);
-// app.delete('/companies/:id', companies.delete);
+app.put('/companies/:id', companies.update);
+app.delete('/companies/:id', companies.delete);
 // app.post  si existe no hace nada manda msj que ya existe  res--> company si no existe que lo grave en archivo
 // app.put  Actualizacion  si existe lo puede modificar puedes modificar el ID y el nombre res-- objeto modificado 
 // appe.delete que si lo encuentra lo elimina , res -- mostrar las compañias sin el elemento 

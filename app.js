@@ -7,7 +7,9 @@ const bodyParse = require('body-parser')
 
 app.use(bodyParse.json())
 app.use(bodyParse.urlencoded({ extended: true }));
+
 const PORT = process.env.PORT || 3000;
+
 const api = require("./src/routers/api")
 
 
